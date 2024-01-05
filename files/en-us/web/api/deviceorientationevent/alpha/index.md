@@ -6,9 +6,9 @@ page-type: web-api-instance-property
 browser-compat: api.DeviceOrientationEvent.alpha
 ---
 
-{{APIRef("Device Orientation Events")}}{{securecontext_header}}
+{{ ApiRef("Device Orientation Events") }}
 
-The **`alpha`** read-only property of the {{domxref("DeviceOrientationEvent")}} interface returns the rotation of the device around the Z axis; that is, the number of degrees by
+Returns the rotation of the device around the Z axis; that is, the number of degrees by
 which the device is being twisted around the center of the screen.
 See [Orientation and motion data explained](/en-US/docs/Web/API/Device_orientation_events/Orientation_and_motion_data_explained) for details.
 
@@ -26,7 +26,8 @@ A number.
 
 ## See also
 
-- {{domxref("Device orientation events/Detecting device orientation", "Detecting device orientation", "", "nocode")}}
-- {{domxref("Device orientation events/Orientation and motion data explained", "Orientation and motion data explained", "", "nocode")}}
-- {{domxref("Window.deviceorientation_event", "deviceorientation")}} event
-- {{domxref("Window.deviceorientationabsolute_event", "deviceorientationabsolute")}} event
+- {{ domxref("DeviceOrientationEvent") }}
+- [Detecting device orientation](/en-US/docs/Web/API/Device_orientation_events/Detecting_device_orientation)
+- [Orientation and motion data explained](/en-US/docs/Web/API/Device_orientation_events/Orientation_and_motion_data_explained)
+- {{DOMxRef("window.deviceorientation_event", "deviceorientation") }} event
+- {{domxref("Window.deviceorientation_event", "deviceorientation")}}

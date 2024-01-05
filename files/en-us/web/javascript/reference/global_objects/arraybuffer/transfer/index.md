@@ -2,10 +2,12 @@
 title: ArrayBuffer.prototype.transfer()
 slug: Web/JavaScript/Reference/Global_Objects/ArrayBuffer/transfer
 page-type: javascript-instance-method
+status:
+  - experimental
 browser-compat: javascript.builtins.ArrayBuffer.transfer
 ---
 
-{{JSRef}}
+{{JSRef}} {{SeeCompatTable}}
 
 The **`transfer()`** method of {{jsxref("ArrayBuffer")}} instances creates a new `ArrayBuffer` with the same byte content as this buffer, then detaches this buffer.
 

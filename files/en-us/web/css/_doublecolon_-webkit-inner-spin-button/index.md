@@ -55,5 +55,6 @@ Not part of any standard.
 
 ## See also
 
+- {{cssxref("::-webkit-outer-spin-button")}}
 - {{cssxref("::-webkit-textfield-decoration-container")}}
 - [Styling Form Controls – WebKit](https://trac.webkit.org/wiki/Styling%20Form%20Controls#inputelement)

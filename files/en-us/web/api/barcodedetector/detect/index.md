@@ -28,7 +28,7 @@ detect(imageBitmapSource)
 ### Return value
 
 Returns a {{jsxref('Promise')}} which fulfills with an array of
-`DetectedBarcode` objects with the following properties:
+`detectedBarcode` objects with the following properties:
 
 - `boundingBox`
   - : A {{domxref('DOMRectReadOnly')}}, which returns the
@@ -40,14 +40,15 @@ Returns a {{jsxref('Promise')}} which fulfills with an array of
     clockwise. This may not be square due to perspective distortions within the image.
 - `format`
   - : The detected barcode format. (For a full list of formats see
-    the [supported barcode format](/en-US/docs/Web/API/Barcode_Detection_API#supported_barcode_formats)).
+    the {{domxref('Barcode Detection API', 'Barcode Detection API overview page')}}).
 - `rawValue`
   - : A string decoded from the barcode data.
 
 ### Exceptions
 
 - {{jsxref("TypeError")}}
-  - : Thrown if no parameter is specified or the `type` is not that of an `ImageBitmapSource`.
+  - : No parameter is specified or the `type` is not that of an
+    `ImageBitmapSource`.
 - `SecurityError` {{domxref("DOMException")}}
   - : Thrown if the `imageBitmapSource` has an origin and is not the same as the document's origin, or if the `imageBitmapSource` is a {{domxref('HTMLCanvasElement')}} and its [origin-clean](https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-origin-clean) flag is set to `false`.
 - `InvalidStateError` {{domxref("DOMException")}}

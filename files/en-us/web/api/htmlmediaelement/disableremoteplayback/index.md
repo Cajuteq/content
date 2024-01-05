@@ -6,9 +6,10 @@ page-type: web-api-instance-property
 browser-compat: api.HTMLMediaElement.disableRemotePlayback
 ---
 
-{{APIRef("Remote Playback API")}}
+{{APIRef("HTML DOM")}}
 
-The **`disableRemotePlayback`** property of the {{domxref("HTMLMediaElement")}} interface determines whether the media element is allowed to have a remote playback UI.
+The **`HTMLMediaElement.disableRemotePlayback`** property
+determines whether the media element is allowed to have a remote playback UI.
 
 ## Value
 
@@ -29,3 +30,7 @@ obj.disableRemotePlayback = true;
 ## Browser compatibility
 
 {{Compat}}
+
+## See also
+
+- {{domxref("HTMLMediaElement")}}: Interface used to define the `HTMLMediaElement.disableRemotePlayback` property

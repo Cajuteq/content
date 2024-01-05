@@ -2,10 +2,7 @@
 title: URL API
 slug: Web/API/URL_API
 page-type: web-api-overview
-browser-compat:
-  - api.URL
-  - api.URLSearchParams
-spec-urls: https://url.spec.whatwg.org/#api
+browser-compat: api.URL
 ---
 
 {{DefaultAPISidebar("URL API")}}
@@ -14,7 +11,7 @@ The URL API is a component of the URL standard, which defines what constitutes a
 
 {{AvailableInWorkers}}
 
-## Concepts and usage
+## URL concepts and usage
 
 The majority of the URL standard is taken up by the [definition of a URL](/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL) and how it is structured and parsed. Also covered are definitions of various terms related to addressing of computers on a network, and the algorithms for parsing IP addresses and DOM addresses are specified. More interesting to most developers is the API itself.
 
@@ -40,7 +37,7 @@ let addr = new URL("https://example.com/login");
 addr.username = myUsername;
 ```
 
-Setting the value of {{domxref("URL.username", "username")}} not only sets that property's value, but it updates the overall URL. After executing the code snippet above, the value returned by {{domxref("URL.href", "href")}} is `https://someguy@example.com/login`. This is true for any of the writable properties.
+Setting the value of {{domxref("URL.username", "username")}} not only sets that property's value, but it updates the overall URL. After executing the code snippet above, the value returned by {{domxref("URL.href", "addr.href")}} is `https://someguy@example.com/login`. This is true for any of the writable properties.
 
 ### Queries
 
@@ -60,14 +57,12 @@ For example, in the above snippet, the username and target page are taken from t
 
 Other functions within `URLSearchParams` let you change the value of keys, add and delete keys and their values, and even sort the list of parameters.
 
-## Interfaces
+## URL API interfaces
 
 The URL API is a simple one, with only a couple of interfaces to its name:
 
-- {{domxref("URL")}}
-  - : Can be used to parse, construct, normalize, and encode {{glossary("URL", "URLs")}}.
-- {{domxref("URLSearchParams")}}
-  - : Defines utility methods to work with the query string of a URL.
+- [`URL`](/en-US/docs/Web/API/URL)
+- [`URLSearchParams`](/en-US/docs/Web/API/URLSearchParams)
 
 ## Examples
 
@@ -107,7 +102,7 @@ A working version of this example can be [found on Glitch](https://url-api.glitc
 
 ## See also
 
-- {{domxref("Fetch API", "", "", "nocode")}}
+- [Fetch API](/en-US/docs/Web/API/Fetch_API)
 - CSS {{cssxref("&lt;url&gt;")}} type
 - {{jsxref("encodeURI", "encodeURI()")}}
 - {{jsxref("encodeURIComponent", "encodeURIComponent()")}}

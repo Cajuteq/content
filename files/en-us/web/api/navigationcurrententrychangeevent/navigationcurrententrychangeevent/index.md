@@ -10,7 +10,8 @@ browser-compat: api.NavigationCurrentEntryChangeEvent.NavigationCurrentEntryChan
 
 {{APIRef("Navigation API")}}{{SeeCompatTable}}
 
-The **`NavigationCurrentEntryChangeEvent()`** constructor creates a new {{domxref("NavigationCurrentEntryChangeEvent")}} object.
+The **`NavigationCurrentEntryChangeEvent()`** constructor creates a new
+{{domxref("NavigationCurrentEntryChangeEvent")}} object.
 
 ## Syntax
 
@@ -26,8 +27,8 @@ new NavigationCurrentEntryChangeEvent(type, init)
   - : An object containing the following properties:
     - `destination`
       - : A {{domxref("NavigationHistoryEntry")}} object representing the location being navigated to.
-    - `navigationType` {{optional_inline}}
-      - : The type of the navigation that resulted in the change. Possible values are `push`, `reload`, `replace`, and `traverse`. Defaults to `null`.
+    - `navigationType`
+      - : The type of the navigation that resulted in the change. Possible values — `push`, `reload`, `replace`, and `traverse`.
 
 ## Examples
 

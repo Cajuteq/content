@@ -88,12 +88,11 @@ Each object contains the following properties:
 
 ## Examples
 
-In this example, we use `getAll()` with no parameters. This returns all of the cookies for this context as an array of objects.
+In this example we use `getAll()` with no parameters. This returns all of the cookies for this context as an array of objects.
 
 ```js
-const cookies = await cookieStore.getAll();
-
-if (cookies.length > 0) {
+let cookies = await cookieStore.getAll();
+if (cookies) {
   console.log(cookies);
 } else {
   console.log("Cookie not found");

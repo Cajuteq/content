@@ -77,10 +77,10 @@ This element's attributes include the [global attributes](/en-US/docs/Web/HTML/G
     <tr>
       <th scope="row">Permitted parents</th>
       <td>
-        <ul>
-          <li>Any element that accepts <a href="/en-US/docs/Web/HTML/Content_categories#flow_content">flow content</a></li>
-          <li><a href="/en-US/docs/Web/HTML/Element/select"><code>&lt;select></code></a> element</li>
-        </ul>
+        Any element that accepts
+        <a href="/en-US/docs/Web/HTML/Content_categories#flow_content"
+          >flow content</a
+        >.
       </td>
     </tr>
     <tr>
@@ -111,4 +111,3 @@ This element's attributes include the [global attributes](/en-US/docs/Web/HTML/G
 ## See also
 
 - {{HTMLElement('p')}}
-- [`<hr>` in `<select>`](/en-US/docs/Web/HTML/Element/select#hr_in_select)

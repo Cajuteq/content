@@ -7,7 +7,11 @@ browser-compat: javascript.builtins.Atomics.compareExchange
 
 {{JSRef}}
 
-The **`Atomics.compareExchange()`** static method exchanges a given replacement value at a given position in the array, if a given expected value equals the old value. It returns the old value at that position whether it was equal to the expected value or not. This atomic operation guarantees that no other write happens until the modified value is written back.
+The **`Atomics.compareExchange()`** static
+method exchanges a given replacement value at a given position in the array, if a given
+expected value equals the old value. It returns the old value at that position whether
+it was equal to the expected value or not. This atomic operation guarantees that no
+other write happens until the modified value is written back.
 
 {{EmbedInteractiveExample("pages/js/atomics-compareexchange.html")}}
 
@@ -20,9 +24,13 @@ Atomics.compareExchange(typedArray, index, expectedValue, replacementValue)
 ### Parameters
 
 - `typedArray`
-  - : An integer typed array. One of {{jsxref("Int8Array")}}, {{jsxref("Uint8Array")}}, {{jsxref("Int16Array")}}, {{jsxref("Uint16Array")}}, {{jsxref("Int32Array")}}, {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or {{jsxref("BigUint64Array")}}.
+  - : An integer typed array. One of {{jsxref("Int8Array")}}, {{jsxref("Uint8Array")}},
+    {{jsxref("Int16Array")}}, {{jsxref("Uint16Array")}}, {{jsxref("Int32Array")}},
+    {{jsxref("Uint32Array")}}, {{jsxref("BigInt64Array")}}, or
+    {{jsxref("BigUint64Array")}}.
 - `index`
-  - : The position in the `typedArray` to exchange a `replacementValue`.
+  - : The position in the `typedArray` to exchange a
+    `value`.
 - `expectedValue`
   - : The value to check for equality.
 - `replacementValue`
@@ -30,7 +38,8 @@ Atomics.compareExchange(typedArray, index, expectedValue, replacementValue)
 
 ### Return value
 
-The old value at the given position (`typedArray[index]`).
+The old value at the given position
+(`typedArray[index]`).
 
 ### Exceptions
 

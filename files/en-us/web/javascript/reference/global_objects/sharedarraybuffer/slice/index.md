@@ -7,7 +7,12 @@ browser-compat: javascript.builtins.SharedArrayBuffer.slice
 
 {{JSRef}}
 
-The **`slice()`** method of {{jsxref("SharedArrayBuffer")}} instances returns a new `SharedArrayBuffer` whose contents are a copy of this `SharedArrayBuffer`'s bytes from `start`, inclusive, up to `end`, exclusive. If either `start` or `end` is negative, it refers to an index from the end of the array, as opposed to from the beginning.
+The **`slice()`** method of {{jsxref("SharedArrayBuffer")}} instances returns a
+new {{jsxref("SharedArrayBuffer")}} whose contents are a copy of this
+`SharedArrayBuffer`'s bytes from begin, inclusive, up to end, exclusive. If
+either begin or end is negative, it refers to an index from the end of the array, as
+opposed to from the beginning. This method has the same algorithm as
+{{jsxref("Array.prototype.slice()")}}.
 
 {{EmbedInteractiveExample("pages/js/sharedarraybuffer-slice.html")}}
 
@@ -15,23 +20,36 @@ The **`slice()`** method of {{jsxref("SharedArrayBuffer")}} instances returns a 
 
 ```js-nolint
 slice()
-slice(start)
-slice(start, end)
+slice(begin)
+slice(begin, end)
 ```
 
 ### Parameters
 
-- `start` {{optional_inline}}
-  - : Zero-based index at which to start extraction, [converted to an integer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#integer_conversion).
-    - Negative index counts back from the end of the buffer — if `start < 0`, `start + buffer.length` is used.
-    - If `start < -buffer.length` or `start` is omitted, `0` is used.
-    - If `start >= buffer.length`, nothing is extracted.
+- `begin` {{optional_inline}}
+
+  - : Zero-based index at which to begin extraction.
+
+    A negative index can be used, indicating an offset from the end of the sequence.
+    `slice(-2)` extracts the last two elements in the sequence.
+
+    If `begin` is undefined, `slice` begins from index
+    `0`.
+
 - `end` {{optional_inline}}
-  - : Zero-based index at which to end extraction, [converted to an integer](/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number#integer_conversion). `slice()` extracts up to but not including `end`.
-    - Negative index counts back from the end of the buffer — if `end < 0`, `end + buffer.length` is used.
-    - If `end < -buffer.length`, `0` is used.
-    - If `end >= buffer.length` or `end` is omitted, `buffer.length` is used, causing all elements until the end to be extracted.
-    - If `end` is positioned before or at `start` after normalization, nothing is extracted.
+
+  - : Zero-based index _before_ which to end extraction. `slice`
+    extracts up to but not including `end`.
+
+    For example, `slice(1,4)` extracts the second element through the fourth
+    element (elements indexed 1, 2, and 3).
+
+    A negative index can be used, indicating an offset from the end of the sequence.
+    `slice(2,-1)` extracts the third element through the second-to-last element
+    in the sequence.
+
+    If `end` is omitted, `slice` extracts through the
+    end of the sequence (`sab.byteLength`).
 
 ### Return value
 
@@ -60,4 +78,4 @@ sab.slice(0, 1); // SharedArrayBuffer { byteLength: 1 }
 ## See also
 
 - {{jsxref("SharedArrayBuffer")}}
-- {{jsxref("ArrayBuffer.prototype.slice()")}}
+- {{jsxref("Array.prototype.slice()")}}

@@ -78,12 +78,12 @@ In this tabs example, each tab controls one tabpanel:
 ## Values
 
 - `id` list
-  - : A space-separated list of one or more ID values referencing the elements being controlled by the current element
+  - : Space separated list of one or more ID values referencing the elements being controlled by the current element
 
-## Associated interfaces
+## ARIAMixin API
 
 - {{domxref("Element.ariaBusy")}}
-  - : The [`ariaControls`](/en-US/docs/Web/API/Element/ariaBusy) property, part of each element's interface, reflects the value of the `aria-controls` attribute, which indicates whether an element is being modified.
+  - : The [`ariaControls`](/en-US/docs/Web/API/Element/ariaBusy) property, part of the {{domxref("ARIAMixin")}} interface, reflects the value of the `aria-controls` attribute, which indicates whether an element is being modified.
 
 ## Associated roles
 

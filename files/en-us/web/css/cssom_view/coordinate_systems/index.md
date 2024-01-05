@@ -77,7 +77,7 @@ const inner = document.querySelector(".inner");
 
 function setCoords(e) {
   log.innerText = `
-    Offset X/Y: ${e.offsetX}, ${e.offsetY}
+    Offset X/Y: ${e.screenX}, ${e.screenY}
     Viewport X/Y: ${e.clientX}, ${e.clientY}
     Page X/Y: ${e.pageX}, ${e.pageY}
     Screen X/Y: ${e.screenX}, ${e.screenY}`;

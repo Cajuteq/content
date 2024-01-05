@@ -3,7 +3,7 @@ title: "RTCIceCandidatePairStats: requestsSent property"
 short-title: requestsSent
 slug: Web/API/RTCIceCandidatePairStats/requestsSent
 page-type: web-api-instance-property
-browser-compat: api.RTCStatsReport.type_candidate-pair.requestsSent
+browser-compat: api.RTCIceCandidatePairStats.requestsSent
 ---
 
 {{APIRef("WebRTC")}}

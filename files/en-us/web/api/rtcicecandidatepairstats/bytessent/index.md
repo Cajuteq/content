@@ -3,7 +3,7 @@ title: "RTCIceCandidatePairStats: bytesSent property"
 short-title: bytesSent
 slug: Web/API/RTCIceCandidatePairStats/bytesSent
 page-type: web-api-instance-property
-browser-compat: api.RTCStatsReport.type_candidate-pair.bytesSent
+browser-compat: api.RTCIceCandidatePairStats.bytesSent
 ---
 
 {{APIRef("WebRTC")}}

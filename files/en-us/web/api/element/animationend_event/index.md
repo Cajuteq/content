@@ -96,11 +96,13 @@ animated.onanimationend = () => {
 
 @keyframes slidein {
   from {
-    transform: translateX(100%) scaleX(3);
+    margin-left: 100%;
+    width: 300%;
   }
 
   to {
-    transform: translateX(0) scaleX(1);
+    margin-left: 0%;
+    width: 100%;
   }
 }
 ```

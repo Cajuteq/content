@@ -13,7 +13,7 @@ The previous article showed you what the communication between web clients and s
     <tr>
       <th scope="row">Prerequisites:</th>
       <td>
-        Basic understanding of how server-side code
+        Basic computer literacy. Basic understanding of how server-side code
         handles and responds to HTTP requests (see <a
           href="/en-US/docs/Learn/Server-side/First_steps/Client-Server_overview"
           >Client-Server overview</a

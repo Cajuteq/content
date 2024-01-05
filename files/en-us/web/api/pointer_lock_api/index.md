@@ -2,10 +2,7 @@
 title: Pointer Lock API
 slug: Web/API/Pointer_Lock_API
 page-type: web-api-overview
-browser-compat:
-  - api.Document.exitPointerLock
-  - api.Element.requestPointerLock
-spec-urls: https://w3c.github.io/pointerlock/
+browser-compat: api.Element.requestPointerLock
 ---
 
 {{DefaultAPISidebar("Pointer Lock API")}}

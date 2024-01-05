@@ -102,7 +102,7 @@ p {
 .text {
   background-clip: text;
   -webkit-background-clip: text;
-  color: rgb(0 0 0 / 20%);
+  color: rgba(0, 0, 0, 0.2);
 }
 ```
 

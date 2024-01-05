@@ -1,5 +1,5 @@
 ---
-title: Performance APIs
+title: Performance API
 slug: Web/API/Performance_API
 page-type: web-api-overview
 spec-urls:

@@ -8,7 +8,7 @@ status:
 browser-compat: api.CustomStateSet.delete
 ---
 
-{{APIRef("Web Components")}}{{SeeCompatTable}}
+{{APIRef("DOM")}}{{SeeCompatTable}}
 
 The **`delete()`** method of the {{domxref("CustomStateSet")}} interface deletes a single value from the `CustomStateSet`.
 

@@ -6,9 +6,9 @@ page-type: web-api-instance-property
 browser-compat: api.DeviceOrientationEvent.absolute
 ---
 
-{{APIRef("Device Orientation Events")}}{{securecontext_header}}
+{{ apiref("Device Orientation Events") }}
 
-The **`absolute`** read-only property of the {{domxref("DeviceOrientationEvent")}} interface indicates whether or not the device is providing orientation data absolutely (that is,
+Indicates whether or not the device is providing orientation data absolutely (that is,
 in reference to the Earth's coordinate frame) or using some arbitrary frame determined
 by the device.
 See [Orientation and motion data explained](/en-US/docs/Web/API/Device_orientation_events/Orientation_and_motion_data_explained) for details.
@@ -28,7 +28,8 @@ See [Orientation and motion data explained](/en-US/docs/Web/API/Device_orientati
 
 ## See also
 
-- {{domxref("Device orientation events/Detecting device orientation", "Detecting device orientation", "", "nocode")}}
-- {{domxref("Device orientation events/Orientation and motion data explained", "Orientation and motion data explained", "", "nocode")}}
-- {{domxref("Window.deviceorientation_event", "deviceorientation")}} event
-- {{domxref("Window.deviceorientationabsolute_event", "deviceorientationabsolute")}} event
+- {{ domxref("DeviceOrientationEvent") }}
+- [Detecting device orientation](/en-US/docs/Web/API/Device_orientation_events/Detecting_device_orientation)
+- [Orientation and motion data explained](/en-US/docs/Web/API/Device_orientation_events/Orientation_and_motion_data_explained)
+- {{DOMxRef("window.deviceorientation_event", "deviceorientation") }} event
+- {{domxref("Window.deviceorientation_event", "deviceorientation")}}

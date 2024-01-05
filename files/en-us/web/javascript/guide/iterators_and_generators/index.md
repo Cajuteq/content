@@ -58,12 +58,12 @@ function makeRangeIterator(start = 0, end = Infinity, step = 1) {
 Using the iterator then looks like this:
 
 ```js
-const iter = makeRangeIterator(1, 10, 2);
+const it = makeRangeIterator(1, 10, 2);
 
-let result = iter.next();
+let result = it.next();
 while (!result.done) {
   console.log(result.value); // 1 3 5 7 9
-  result = iter.next();
+  result = it.next();
 }
 
 console.log("Iterated over sequence of size:", result.value); // [5 numbers returned, that took interval in between: 0 to 10]
@@ -108,23 +108,23 @@ function* makeIterator() {
   yield 2;
 }
 
-const iter = makeIterator();
+const it = makeIterator();
 
-for (const itItem of iter) {
+for (const itItem of it) {
   console.log(itItem);
 }
 
-console.log(iter[Symbol.iterator]() === iter); // true
+console.log(it[Symbol.iterator]() === it); // true
 
 // This example show us generator(iterator) is iterable object,
-// which has the @@iterator method return the `iter` (itself),
+// which has the @@iterator method return the it (itself),
 // and consequently, the it object can iterate only _once_.
 
-// If we change the @@iterator method of `iter` to a function/generator
-// which returns a new iterator/generator object, `iter`
+// If we change it's @@iterator method to a function/generator
+// which returns a new iterator/generator object, (it)
 // can iterate many times
 
-iter[Symbol.iterator] = function* () {
+it[Symbol.iterator] = function* () {
   yield 2;
   yield 1;
 };

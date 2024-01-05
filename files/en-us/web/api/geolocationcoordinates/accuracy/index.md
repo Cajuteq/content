@@ -8,7 +8,10 @@ browser-compat: api.GeolocationCoordinates.accuracy
 
 {{securecontext_header}}{{APIRef("Geolocation API")}}
 
-The **`accuracy`** read-only property of the {{domxref("GeolocationCoordinates")}} interface is a strictly positive `double` representing the accuracy, with a 95% confidence level, of the {{domxref("GeolocationCoordinates.latitude")}} and {{domxref("GeolocationCoordinates.longitude")}} properties expressed in meters.
+The **`GeolocationCoordinates.accuracy`** read-only property is
+a strictly positive `double` representing the accuracy, with a 95% confidence
+level, of the {{domxref("GeolocationCoordinates.latitude")}} and
+{{domxref("GeolocationCoordinates.longitude")}} properties expressed in meters.
 
 ## Value
 

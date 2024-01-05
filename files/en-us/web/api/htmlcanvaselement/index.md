@@ -41,9 +41,7 @@ _Inherits methods from its parent, {{domxref("HTMLElement")}}._
 
 ## Events
 
-_Inherits events from its parent, {{domxref("HTMLElement")}}._
-
-Listen to these events using {{DOMxRef("EventTarget.addEventListener", "addEventListener()")}} or by assigning an event listener to the `oneventname` property of this interface.
+Listen to these events using [`addEventListener()`](/en-US/docs/Web/API/EventTarget/addEventListener).
 
 - [`contextlost`](/en-US/docs/Web/API/HTMLCanvasElement/contextlost_event) {{Experimental_Inline}}
   - : Fired if the user agent detects that the backing storage associated with a `CanvasRenderingContext2D` or an `OffscreenCanvasRenderingContext2D` context has been lost.

@@ -90,7 +90,7 @@ Relevant directives include the {{Glossary("fetch directive", "fetch directives"
 
 Directives for which the above sources apply include:
 
-- {{Glossary("fetch directive", "Fetch directives")}}:
+- {{Glossary("fetch directive", "Fetch directives")}} (all):
 
   - {{CSP("default-src")}}
   - {{CSP("child-src")}}
@@ -105,17 +105,15 @@ Directives for which the above sources apply include:
   - {{CSP("script-src")}}
   - {{CSP("script-src-elem")}}
   - {{CSP("script-src-attr")}}
-  - {{CSP("style-src")}}
-  - {{CSP("style-src-elem")}}
+  - {{CSP("style-src")}}, {{CSP("style-src-elem")}}
   - {{CSP("style-src-attr")}}
   - {{CSP("worker-src")}}
 
 - {{Glossary("Document directive", "Document directives")}}:
 
   - {{CSP("base-uri")}}
-  - {{CSP("sandbox")}}
 
 - {{Glossary("Navigation directive", "Navigation directives")}}:
 
+  - {{CSP("navigate-to")}}
   - {{CSP("form-action")}}
-  - {{CSP("frame-ancestors")}}

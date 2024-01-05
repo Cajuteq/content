@@ -13,7 +13,7 @@ In the assessment for this module, we present to you a simple site with a number
     <tr>
       <th scope="row">Prerequisites:</th>
       <td>
-        A basic understanding of HTML, CSS, and
+        Basic computer literacy, a basic understanding of HTML, CSS, and
         JavaScript, an understanding of the
         <a href="/en-US/docs/Learn/Accessibility"
           >previous articles in the course</a

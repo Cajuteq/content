@@ -206,8 +206,8 @@ div > div {
   background-color: blue;
   background-image: radial-gradient(
     circle at 10px 10px,
-    rgb(25 255 255 / 80%),
-    rgb(25 255 255 / 40%)
+    rgba(25, 255, 255, 0.8),
+    rgba(25, 255, 255, 0.4)
   );
   border-radius: 50%;
   top: 25px;
@@ -342,4 +342,3 @@ steps(0, jump-none)
 - [CSS animations](/en-US/docs/Web/CSS/CSS_animations)
 - [CSS transitions](/en-US/docs/Web/CSS/CSS_transitions)
 - [cubic-bezier](https://cubic-bezier.com/)
-- [`linear()` easing generator](https://linear-easing-generator.netlify.app/)

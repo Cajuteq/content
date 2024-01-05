@@ -288,5 +288,6 @@ You can {{LiveSampleLink("Example_of_recording_a_media_element", "view the full 
 
 ## See also
 
-- [Media Capture and Streams API](/en-US/docs/Web/API/Media_Capture_and_Streams_API) landing page
-- {{domxref("MediaDevices.getUserMedia()")}}
+- [MediaStream Recording API](/en-US/docs/Web/API/MediaStream_Recording_API)
+- [Using the MediaStream Recording API](/en-US/docs/Web/API/MediaStream_Recording_API/Using_the_MediaStream_Recording_API)
+- [Media Capture and Streams API](/en-US/docs/Web/API/Media_Capture_and_Streams_API)

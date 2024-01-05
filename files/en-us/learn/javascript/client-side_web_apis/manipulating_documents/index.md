@@ -13,7 +13,7 @@ When writing web pages and apps, one of the most common things you'll want to do
     <tr>
       <th scope="row">Prerequisites:</th>
       <td>
-        A basic understanding of HTML, CSS, and
+        Basic computer literacy, a basic understanding of HTML, CSS, and
         JavaScript — including JavaScript objects.
       </td>
     </tr>

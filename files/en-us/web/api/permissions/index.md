@@ -37,6 +37,6 @@ navigator.permissions.query({ name: "geolocation" }).then((result) => {
 
 {{Specifications}}
 
-## Browser compatibility
+## Browser Support
 
 {{Compat}}

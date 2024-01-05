@@ -6,7 +6,6 @@ page-type: web-api-instance-method
 status:
   - experimental
 browser-compat: api.KeyboardLayoutMap.forEach
-spec-urls: https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prototype.foreach
 ---
 
 {{APIRef("Keyboard API")}}{{SeeCompatTable}}
@@ -14,8 +13,6 @@ spec-urls: https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map.prot
 The **`forEach()`** method of the
 {{domxref('KeyboardLayoutMap')}} interface executes a provided function once for
 each element of the map.
-
-The method is otherwise the same as {{jsxref("Map.prototype.forEach()")}}.
 
 ## Syntax
 
@@ -45,18 +42,6 @@ forEach(callbackFn, thisArg)
 
 None ({{jsxref("undefined")}}).
 
-## Examples
-
-The following example iterates every location- or layout-specific string and its associated keyboard code on an English QWERTY keyboard.
-
-```js
-navigator.keyboard.getLayoutMap().then((keyboardLayoutMap) => {
-  keyboardLayoutMap.forEach((key, code) => {
-    console.log(`${code} keyboard code represents ${key} key`);
-  });
-});
-```
-
 ## Specifications
 
 {{Specifications}}
@@ -64,7 +49,3 @@ navigator.keyboard.getLayoutMap().then((keyboardLayoutMap) => {
 ## Browser compatibility
 
 {{Compat}}
-
-## See also
-
-- {{jsxref("Map.prototype.forEach()")}}

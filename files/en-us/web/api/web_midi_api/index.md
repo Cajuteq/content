@@ -106,7 +106,7 @@ function listInputsAndOutputs(midiAccess) {
 
 ### Handling MIDI Input
 
-This example prints all MIDI input messages to the console.
+This example prints incoming MIDI messages on a single port to the console.
 
 ```js
 function onMIDIMessage(event) {
@@ -117,7 +117,7 @@ function onMIDIMessage(event) {
   console.log(str);
 }
 
-function startLoggingMIDIInput(midiAccess) {
+function startLoggingMIDIInput(midiAccess, indexOfPort) {
   midiAccess.inputs.forEach((entry) => {
     entry.onmidimessage = onMIDIMessage;
   });

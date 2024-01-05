@@ -13,9 +13,10 @@ We continue the review of basic math notations and focus on building MathML elem
     <tr>
       <th scope="row">Prerequisites:</th>
       <td>
+        Basic computer literacy,
         <a
           href="/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software"
-          >Basic software installed</a
+          >basic software installed</a
         >, basic knowledge of
         <a
           href="/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files"

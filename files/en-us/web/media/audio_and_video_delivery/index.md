@@ -98,7 +98,7 @@ It's also possible to feed an {{ htmlelement("audio") }} element a base64 encode
 <audio id="player" src="data:audio/x-wav;base64,UklGRvC…"></audio>
 ```
 
-[Speak.js](https://github.com/kripken/speak.js/) employs this technique.
+[Speak.js](https://github.com/kripken/speak.js/) employs this technique. [Try the demo](https://speak-demo.herokuapp.com).
 
 ### JavaScript Video
 
@@ -119,41 +119,38 @@ We set the source of the video depending on the type of video file the browser s
 
 ## Web Audio API
 
-In this example we retrieve an MP3 file using the {{domxref("fetch()")}} API, load it into a source, and play it.
-
 ```js
-let audioCtx;
-let buffer;
+let context;
+let request;
 let source;
 
-async function loadAudio() {
-  try {
-    // Load an audio file
-    const response = await fetch("viper.mp3");
-    // Decode it
-    buffer = await audioCtx.decodeAudioData(await response.arrayBuffer());
-  } catch (err) {
-    console.error(`Unable to fetch the audio file. Error: ${err.message}`);
-  }
-}
+try {
+  context = new AudioContext();
+  request = new XMLHttpRequest();
+  request.open(
+    "GET",
+    "http://jplayer.org/audio/mp3/RioMez-01-Sleep_together.mp3",
+    true,
+  );
+  request.responseType = "arraybuffer";
 
-const play = document.getElementById("play");
-play.addEventListener("click", async () => {
-  if (!audioCtx) {
-    audioCtx = new AudioContext();
-    await loadAudio();
-  }
-  source = audioCtx.createBufferSource();
-  source.buffer = buffer;
-  source.connect(audioCtx.destination);
-  source.start();
-  play.disabled = true;
-});
+  request.onload = () => {
+    context.decodeAudioData(request.response, (buffer) => {
+      source = context.createBufferSource();
+      source.buffer = buffer;
+      source.connect(context.destination);
+      // autoplay
+      source.start(0); // start was previously noteOn
+    });
+  };
+
+  request.send();
+} catch (e) {
+  alert("web audio api not supported");
+}
 ```
 
-You can [run the full example live](https://mdn.github.io/webaudio-examples/decode-audio-data/promise/), or [view the source](https://github.com/mdn/webaudio-examples/blob/main/decode-audio-data/promise/).
-
-Find more about Web Audio API basics in [Using the Web Audio API](/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API).
+In this example we retrieve an MP3 file via XHR, load it into a source and play it ([Try it for yourself](https://jsbin.com/facutone/1/edit?js)). Find more about Web Audio API basics in [Using the Web Audio API](/en-US/docs/Web/API/Web_Audio_API/Using_Web_Audio_API).
 
 ## getUserMedia / Stream API
 
@@ -493,7 +490,7 @@ A number of audio and video JavaScript libraries exist. The most popular librari
 ## Basic tutorials
 
 - [Creating a cross-browser video player](/en-US/docs/Web/Media/Audio_and_video_delivery/cross_browser_video_player)
-  - : A guide to creating a basic cross browser video player using the {{ htmlelement("video") }} element.
+  - : A guide to creating a basic cross browser video player using the {{ htmlelement ("video") }} element.
 - [Video player styling basics](/en-US/docs/Web/Media/Audio_and_video_delivery/Video_player_styling_basics)
   - : With the cross-browser video player put in place in the previous article, this article now looks at providing some basic, responsive styling for the player.
 - [Cross-browser audio basics](/en-US/docs/Web/Media/Audio_and_video_delivery/Cross-browser_audio_basics)

@@ -137,33 +137,33 @@ This example shows a cube with transparent faces, and one with opaque faces.
 
 /* Define each face based on direction */
 .front {
-  background: rgb(0 0 0 / 30%);
+  background: rgba(0, 0, 0, 0.3);
   transform: translateZ(50px);
 }
 
 .back {
-  background: rgb(0 255 0 / 100%);
+  background: rgba(0, 255, 0, 1);
   color: black;
   transform: rotateY(180deg) translateZ(50px);
 }
 
 .right {
-  background: rgb(196 0 0 / 70%);
+  background: rgba(196, 0, 0, 0.7);
   transform: rotateY(90deg) translateZ(50px);
 }
 
 .left {
-  background: rgb(0 0 196 / 70%);
+  background: rgba(0, 0, 196, 0.7);
   transform: rotateY(-90deg) translateZ(50px);
 }
 
 .top {
-  background: rgb(196 196 0 / 70%);
+  background: rgba(196, 196, 0, 0.7);
   transform: rotateX(90deg) translateZ(50px);
 }
 
 .bottom {
-  background: rgb(196 0 196 / 70%);
+  background: rgba(196, 0, 196, 0.7);
   transform: rotateX(-90deg) translateZ(50px);
 }
 

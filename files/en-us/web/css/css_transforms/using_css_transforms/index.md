@@ -171,6 +171,7 @@ The CSS establishes classes that can be used to set the perspective to different
 .cube {
   width: 100%;
   height: 100%;
+  backface-visibility: visible;
   perspective-origin: 150% 150%;
   transform-style: preserve-3d;
 }
@@ -186,38 +187,37 @@ The CSS establishes classes that can be used to set the perspective to different
   font-size: 60px;
   color: white;
   text-align: center;
-  backface-visibility: visible;
 }
 
 /* Define each face based on direction */
 .front {
-  background: rgb(0 0 0 / 30%);
+  background: rgba(0, 0, 0, 0.3);
   transform: translateZ(50px);
 }
 
 .back {
-  background: rgb(0 255 0 / 100%);
+  background: rgba(0, 255, 0, 1);
   color: black;
   transform: rotateY(180deg) translateZ(50px);
 }
 
 .right {
-  background: rgb(196 0 0 / 70%);
+  background: rgba(196, 0, 0, 0.7);
   transform: rotateY(90deg) translateZ(50px);
 }
 
 .left {
-  background: rgb(0 0 196 / 70%);
+  background: rgba(0, 0, 196, 0.7);
   transform: rotateY(-90deg) translateZ(50px);
 }
 
 .top {
-  background: rgb(196 196 0 / 70%);
+  background: rgba(196, 196, 0, 0.7);
   transform: rotateX(90deg) translateZ(50px);
 }
 
 .bottom {
-  background: rgb(196 0 196 / 70%);
+  background: rgba(196, 0, 196, 0.7);
   transform: rotateX(-90deg) translateZ(50px);
 }
 
@@ -468,6 +468,7 @@ This example shows cubes with popular `perspective-origin` values.
 .cube {
   width: 100%;
   height: 100%;
+  backface-visibility: visible;
   perspective: 300px;
   transform-style: preserve-3d;
 }
@@ -483,33 +484,32 @@ This example shows cubes with popular `perspective-origin` values.
   font-size: 60px;
   color: white;
   text-align: center;
-  backface-visibility: visible;
 }
 
 /* Define each face based on direction */
 .front {
-  background: rgb(0 0 0 / 30%);
+  background: rgba(0, 0, 0, 0.3);
   transform: translateZ(50px);
 }
 .back {
-  background: rgb(0 255 0 / 100%);
+  background: rgba(0, 255, 0, 1);
   color: black;
   transform: rotateY(180deg) translateZ(50px);
 }
 .right {
-  background: rgb(196 0 0 / 70%);
+  background: rgba(196, 0, 0, 0.7);
   transform: rotateY(90deg) translateZ(50px);
 }
 .left {
-  background: rgb(0 0 196 / 70%);
+  background: rgba(0, 0, 196, 0.7);
   transform: rotateY(-90deg) translateZ(50px);
 }
 .top {
-  background: rgb(196 196 0 / 70%);
+  background: rgba(196, 196, 0, 0.7);
   transform: rotateX(90deg) translateZ(50px);
 }
 .bottom {
-  background: rgb(196 0 196 / 70%);
+  background: rgba(196, 0, 196, 0.7);
   transform: rotateX(-90deg) translateZ(50px);
 }
 

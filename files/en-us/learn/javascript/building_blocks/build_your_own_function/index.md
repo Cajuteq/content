@@ -13,10 +13,11 @@ With most of the essential theory dealt with in the previous article, this artic
     <tr>
       <th scope="row">Prerequisites:</th>
       <td>
-        A basic understanding of HTML, CSS, and
+        Basic computer literacy, a basic understanding of HTML and CSS,
         <a href="/en-US/docs/Learn/JavaScript/First_steps"
           >JavaScript first steps</a
-        >. Also, <a href="/en-US/docs/Learn/JavaScript/Building_blocks/Functions"
+        >,
+        <a href="/en-US/docs/Learn/JavaScript/Building_blocks/Functions"
           >Functions — reusable blocks of code</a
         >.
       </td>

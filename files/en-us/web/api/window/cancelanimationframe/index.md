@@ -67,5 +67,4 @@ cancelAnimationFrame(myReq);
 
 ## See also
 
-- {{domxref("Window.requestAnimationFrame()")}}
-- {{domxref("DedicatedWorkerGlobalScope.cancelAnimationFrame()")}}
+- {{domxref("window.requestAnimationFrame()")}}

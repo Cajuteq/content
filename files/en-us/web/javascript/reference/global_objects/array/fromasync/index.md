@@ -124,7 +124,7 @@ Array.fromAsync(
 `Array.fromAsync()` awaits each value yielded from the object sequentially. `Promise.all()` awaits all values concurrently.
 
 ```js
-function* makeIterableOfPromises() {
+function* makeAsyncIterable() {
   for (let i = 0; i < 5; i++) {
     yield new Promise((resolve) => setTimeout(resolve, 100));
   }
@@ -132,12 +132,12 @@ function* makeIterableOfPromises() {
 
 (async () => {
   console.time("Array.fromAsync() time");
-  await Array.fromAsync(makeIterableOfPromises());
+  await Array.fromAsync(makeAsyncIterable());
   console.timeEnd("Array.fromAsync() time");
   // Array.fromAsync() time: 503.610ms
 
   console.time("Promise.all() time");
-  await Promise.all(makeIterableOfPromises());
+  await Promise.all(makeAsyncIterable());
   console.timeEnd("Promise.all() time");
   // Promise.all() time: 101.728ms
 })();

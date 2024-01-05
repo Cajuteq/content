@@ -11,6 +11,8 @@ browser-compat: api.FontData
 
 The **`FontData`** interface of the {{domxref("Local Font Access API", "Local Font Access API", "", "nocode")}} represents a single local font face.
 
+{{InheritanceDiagram}}
+
 ## Instance properties
 
 - {{domxref('FontData.family')}} {{ReadOnlyInline}} {{Experimental_Inline}}
@@ -97,7 +99,5 @@ async function computeOutlineFormat() {
 
 {{Compat}}
 
-## See also
-
-- [Use advanced typography with local fonts](https://developer.chrome.com/docs/capabilities/web-apis/local-fonts)
+- [Use advanced typography with local fonts](https://developer.chrome.com/articles/local-fonts/)
 - {{cssxref("@font-face")}}

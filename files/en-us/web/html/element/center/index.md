@@ -26,10 +26,6 @@ This element implements the {{domxref("HTMLElement")}} interface.
 </center>
 ```
 
-### Result
-
-{{EmbedLiveSample("Example 1")}}
-
 ## Example 2 (CSS alternative)
 
 ```html
@@ -38,10 +34,6 @@ This element implements the {{domxref("HTMLElement")}} interface.
   <p>So will this paragraph.</p>
 </div>
 ```
-
-### Result
-
-{{EmbedLiveSample("Example 2 (CSS alternative)")}}
 
 ## Example 3 (CSS alternative)
 
@@ -52,11 +44,9 @@ This element implements the {{domxref("HTMLElement")}} interface.
 </p>
 ```
 
-### Result
+## Note
 
-{{EmbedLiveSample("Example 3 (CSS alternative)")}}
-
-> **Note:** Applying {{Cssxref("text-align")}}`:center` to a {{HTMLElement("div")}} or {{HTMLElement("p")}} element centers the _contents_ of those elements while leaving their overall dimensions unchanged.
+Applying {{Cssxref("text-align")}}`:center` to a {{HTMLElement("div")}} or {{HTMLElement("p")}} element centers the _contents_ of those elements while leaving their overall dimensions unchanged.
 
 <!-- ## Technical summary -->
 

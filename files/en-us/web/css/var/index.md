@@ -195,6 +195,5 @@ Since `--main-bg-color` isn't set, the body's `background-color` will fall back 
 ## See also
 
 - {{cssxref("env","env(…)")}} – read‑only environment variables controlled by the user‑agent.
-- [Using CSS custom properties (variables)](/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+- [Using CSS variables](/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 - {{cssxref("@property")}} at-rule
-- [CSS custom properties for cascading variables](/en-US/docs/Web/CSS/CSS_cascading_variables) module

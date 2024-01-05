@@ -59,23 +59,24 @@ new Sanitizer(config)
 
 ## Examples
 
-The examples below show a sanitization operation using the {{domxref("Sanitizer.sanitize()")}} method.
+The examples below show a sanitization operation using the {{domxref("Sanitizer.sanitizeFor()")}} method.
+This method takes as inputs a string of HTML to sanitize and the context (tag) in which it is sanitized, and returns a sanitized node object for the specified tag.
+To simplify the presentation the result that is shown is actually the _innerHTML_ of the returned object.
+
+> **Note:** The API _only_ sanitizes HTML in strings in the context of a particular element/tag.
+> For more information see {{domxref('HTML Sanitizer API')}} (and {{domxref("Sanitizer.sanitizeFor()")}}).
 
 ### Using the default sanitizer
 
-This example shows how to sanitize data from an iframe with id `userFrame`, using the {{domxref("Sanitizer.sanitize()")}} method:
+This example shows the result of sanitizing a string with disallowed `script` element using the default sanitizer (in a `div` context).
 
 ```js
-const sanitizer = new Sanitizer(); // Default sanitizer;
-
-// Get the frame and its Document object
-const frame_element = document.getElementById("userFrame");
-const unsanitized_frame_tree = frame_element.contentWindow.document;
-
-// Sanitize the document tree and update the frame.
-const sanitized_frame_tree = sanitizer.sanitize(unsanitized_frame_tree);
-frame_element.replaceChildren(sanitized_frame_tree);
+const unsanitized = "abc <script>alert(1)<" + "/script> def";
+const sanitized = new Sanitizer().sanitizeFor("div", unsanitized);
+// Result (innerHTML of 'sanitized'): script will be removed: "abc alert(1) def"
 ```
+
+<!-- Add other examples showing use of parameter -->
 
 ## Specifications
 

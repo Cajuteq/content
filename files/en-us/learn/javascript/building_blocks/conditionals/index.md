@@ -13,7 +13,7 @@ In any programming language, the code needs to make decisions and carry out acti
     <tr>
       <th scope="row">Prerequisites:</th>
       <td>
-        A basic understanding of HTML, CSS, and
+        Basic computer literacy, a basic understanding of HTML and CSS,
         <a href="/en-US/docs/Learn/JavaScript/First_steps"
           >JavaScript first steps</a
         >.

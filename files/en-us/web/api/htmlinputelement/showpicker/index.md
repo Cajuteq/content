@@ -171,6 +171,5 @@ button.addEventListener("click", () => {
 
 - {{ HTMLElement("input") }}
 - {{ domxref("HTMLInputElement") }}
-- {{ domxref("HTMLSelectElement.showPicker()") }}
 - {{htmlelement("datalist")}}
 - [`autocomplete`](/en-US/docs/Web/HTML/Attributes/autocomplete)

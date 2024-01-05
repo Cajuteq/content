@@ -23,12 +23,12 @@ get(options)
 
 This method requires one of the following:
 
-- `name` {{optional_inline}}
+- `name`
   - : A string with the name of a cookie.
 
 Or
 
-- `options` {{optional_inline}}
+- `options`
 
   - : An object containing:
 
@@ -88,11 +88,10 @@ A {{jsxref("Promise")}} that resolves with an object representing the first cook
 
 ## Examples
 
-In this example, we return a cookie named "cookie1". If the cookie is found the result of the Promise is an object containing the details of a single cookie.
+In this example we return a cookie named "cookie1". If the cookie is found the result of the Promise is an object containing the details of a single cookie.
 
 ```js
-const cookie = await cookieStore.get("cookie1");
-
+let cookie = cookieStore.get("cookie1");
 if (cookie) {
   console.log(cookie);
 } else {

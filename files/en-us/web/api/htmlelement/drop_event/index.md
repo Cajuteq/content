@@ -10,8 +10,6 @@ browser-compat: api.HTMLElement.drop_event
 
 The **`drop`** event is fired when an element or text selection is dropped on a valid drop target. To ensure that the `drop` event always fires as expected, you should always include a [`preventDefault()`](/en-US/docs/Web/API/Event/preventDefault) call in the part of your code which handles the [`dragover`](/en-US/docs/Web/API/HTMLElement/dragover_event) event.
 
-This event is cancelable and may bubble up to the {{domxref("Document")}} and {{domxref("Window")}} objects.
-
 ## Syntax
 
 Use the event name in methods like {{domxref("EventTarget.addEventListener", "addEventListener()")}}, or set an event handler property.
@@ -33,13 +31,13 @@ A {{domxref("DragEvent")}}. Inherits from {{domxref("Event")}}.
 _In addition to the properties listed below, properties from the parent interface, {{domxref("Event")}}, are available._
 
 - {{domxref('DragEvent.dataTransfer')}} {{ReadOnlyInline}}
-  - : The data that is transferred during a drag-and-drop interaction.
+  - : The data that is transferred during a drag and drop interaction.
 
 ## Examples
 
-### A minimal drag-and-drop example
+### A minimal drag and drop example
 
-In this example, we have a draggable element inside a container. Try grabbing the element, dragging it over the other container, and releasing it.
+In this example, we have a draggable element inside a container. Try grabbing the element, dragging it over the other container, and then releasing it.
 
 We use three event handlers here:
 
@@ -62,7 +60,7 @@ For a more complete example of drag and drop, see the page for the [`drag`](/en-
 
 ```css
 body {
-  /* Prevent the user from selecting text in the example */
+  /* Prevent the user selecting text in the example */
   user-select: none;
 }
 
@@ -98,7 +96,7 @@ target.addEventListener("dragover", (event) => {
 });
 
 target.addEventListener("drop", (event) => {
-  // prevent default action (open as a link for some elements)
+  // prevent default action (open as link for some elements)
   event.preventDefault();
   // move dragged element to the selected drop target
   if (event.target.className === "dropzone") {
@@ -130,3 +128,9 @@ target.addEventListener("drop", (event) => {
   - {{domxref("HTMLElement/dragover_event", "dragover")}}
   - {{domxref("HTMLElement/dragenter_event", "dragenter")}}
   - {{domxref("HTMLElement/dragleave_event", "dragleave")}}
+
+- This event on other targets:
+
+  - {{domxref("Window")}}: {{domxref("Window/drop_event", "drop")}} event
+  - {{domxref("Document")}}: {{domxref("Document/drop_event", "drop")}} event
+  - {{domxref("SVGElement")}}: {{domxref("SVGElement/drop_event", "drop")}} event

@@ -8,11 +8,11 @@ status:
 browser-compat: api.Window.navigation
 ---
 
-{{APIRef("Navigation API")}}{{SeeCompatTable}}
+{{APIRef}}{{SeeCompatTable}}
 
-The **`navigation`** read-only property of the {{domxref("Window")}} interface returns the current `window`'s associated {{domxref("Navigation")}} object.
+The `navigation` read-only property of the {{domxref("Window")}} interface returns the current `window`'s associated {{domxref("Navigation")}} object.
 
-This is the entry point for the {{domxref("Navigation API", "", "", "nocode")}}.
+The entry point for the {{domxref("Navigation API")}}.
 
 ## Value
 

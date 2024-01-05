@@ -45,9 +45,7 @@ _No specific method; inherits methods from its parent, {{domxref("HTMLElement")}
 
 ## Events
 
-_Inherits events from its parent, {{domxref("HTMLElement")}}._
-
-Listen to these events using {{domxref("EventTarget/addEventListener", "addEventListener()")}} or by assigning an event listener to the `oneventname` property of this interface:
+_The following events may be fired on a {{HTMLElement("track")}} element, in addition to any that may be fired at its parent, {{domxref("HTMLElement")}}._
 
 - {{domxref("HTMLTrackElement.cuechange_event", "cuechange")}}
   - : Sent when the underlying {{domxref("TextTrack")}} has changed the currently-presented cues. This event is always sent to the `TextTrack` but is _also_ sent to the `HTMLTrackElement` if one is associated with the track.

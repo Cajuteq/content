@@ -5,9 +5,9 @@ page-type: web-api-interface
 browser-compat: api.DeviceMotionEvent
 ---
 
-{{APIRef("Device Orientation Events")}}{{securecontext_header}}
+{{APIRef("Device Orientation Events")}}
 
-The **`DeviceMotionEvent`** interface of the {{domxref("Device Orientation Events", "", "", "nocode")}} provides web developers with information about the speed of changes for the device's position and orientation.
+The **`DeviceMotionEvent`** interface provides web developers with information about the speed of changes for the device's position and orientation.
 
 > **Warning:** Currently, Firefox and Chrome do not handle the coordinates the same way. Take care about this while using them.
 
@@ -47,11 +47,10 @@ window.addEventListener("devicemotion", (event) => {
 
 ## See also
 
-- {{domxref("Device orientation events/Detecting device orientation", "Detecting device orientation", "", "nocode")}}
-- {{domxref("Device orientation events/Orientation and motion data explained", "Orientation and motion data explained", "", "nocode")}}
+- {{domxref("Window/deviceorientation_event", "deviceorientation")}}
 - {{DOMxRef("DeviceOrientationEvent")}}
-- {{DOMxRef("Window.deviceorientation_event", "deviceorientation")}} event
-- {{DOMxRef("Window.deviceorientationabsolute_event", "deviceorientationabsolute")}} event
-- {{DOMxRef("Window/devicemotion_event", "devicemotion")}} event
+- {{domxref("Window/devicemotion_event", "devicemotion")}}
 - {{DOMxRef("Accelerometer")}}
 - {{DOMxRef("LinearAccelerationSensor")}}
+- [Detecting device orientation](/en-US/docs/Web/API/Device_orientation_events/Detecting_device_orientation)
+- [Orientation and motion data explained](/en-US/docs/Web/API/Device_orientation_events/Orientation_and_motion_data_explained)

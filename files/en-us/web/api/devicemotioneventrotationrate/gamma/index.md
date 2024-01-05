@@ -6,9 +6,9 @@ page-type: web-api-instance-property
 browser-compat: api.DeviceMotionEventRotationRate.gamma
 ---
 
-{{APIRef("Device Orientation Events")}}{{securecontext_header}}
+{{ ApiRef("Device Orientation Events") }}
 
-The **`gamma`** read-only property of the {{domxref("DeviceMotionEventRotationRate")}} interface indicates the rate of rotation around the Y axis, in degrees per second.
+This property indicates the rate of rotation around the Y axis, in degrees per second.
 
 ## Value
 

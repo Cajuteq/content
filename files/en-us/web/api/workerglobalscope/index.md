@@ -88,19 +88,17 @@ _This interface inherits methods from the {{domxref("EventTarget")}} interface._
 ## Events
 
 - {{domxref("WorkerGlobalScope/error_event", "error")}}
-  - : Fired when an error occurred.
+  - : Fires when an error occurred.
 - {{domxref("WorkerGlobalScope/languagechange_event", "languagechange")}}
-  - : Fired at the global/worker scope object when the user's preferred languages change.
+  - : Fires at the global/worker scope object when the user's preferred languages change.
 - {{domxref("WorkerGlobalScope/offline_event", "offline")}}
-  - : Fired when the browser has lost access to the network and the value of `navigator.onLine` switched to `false`.
+  - : Fires when the browser has lost access to the network and the value of `navigator.onLine` switched to `false`.
 - {{domxref("WorkerGlobalScope/online_event", "online")}}
-  - : Fired when the browser has gained access to the network and the value of `navigator.onLine` switched to `true`.
+  - : Fires when the browser has gained access to the network and the value of `navigator.onLine` switched to `true`.
 - {{domxref("WorkerGlobalScope/rejectionhandled_event", "rejectionhandled")}}
-  - : Fired on handled {{jsxref("Promise")}} rejection events.
-- {{domxref("WorkerGlobalScope/securitypolicyviolation_event", "securitypolicyviolation")}}
-  - : Fired when a [Content Security Policy](/en-US/docs/Web/HTTP/CSP) is violated.
+  - : Fires on handled {{jsxref("Promise")}} rejection events.
 - {{domxref("WorkerGlobalScope/unhandledrejection_event", "unhandledrejection")}}
-  - : Fired on unhandled {{jsxref("Promise")}} rejection events.
+  - : Fires on unhandled {{jsxref("Promise")}} rejection events.
 
 ## Example
 

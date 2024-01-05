@@ -21,11 +21,11 @@ _The `Geolocation` interface neither implements, nor inherits any property._
 
 _The `Geolocation` interface doesn't inherit any method._
 
-- {{domxref("Geolocation.getCurrentPosition()")}}
+- {{domxref("Geolocation.getCurrentPosition()")}} {{securecontext_inline}}
   - : Determines the device's current location and gives back a {{domxref("GeolocationPosition")}} object with the data.
-- {{domxref("Geolocation.watchPosition()")}}
+- {{domxref("Geolocation.watchPosition()")}} {{securecontext_inline}}
   - : Returns a `long` value representing the newly established callback function to be invoked whenever the device location changes.
-- {{domxref("Geolocation.clearWatch()")}}
+- {{domxref("Geolocation.clearWatch()")}} {{securecontext_inline}}
   - : Removes the particular handler previously installed using `watchPosition()`.
 
 ## Specifications

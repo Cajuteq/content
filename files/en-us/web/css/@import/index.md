@@ -159,4 +159,3 @@ This is an example of creating two separate unnamed cascade layers and importing
 
 - {{CSSxRef("@media")}}
 - {{CSSxRef("@supports")}}
-- [CSS cascade and inheritance](/en-US/docs/Web/CSS/CSS_cascade) module

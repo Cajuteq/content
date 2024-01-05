@@ -79,9 +79,9 @@ main {
   background-color: white;
   background-image: repeating-linear-gradient(
     to bottom,
-    rgb(0 0 0 / 0%) 0px,
-    rgb(0 0 0 / 0%) 19px,
-    rgb(0 0 0 / 50%) 20px
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 19px,
+    rgba(0, 0, 0, 0.5) 20px
   );
 }
 
@@ -101,15 +101,15 @@ div > div {
   background-color: yellow;
   background-image: repeating-linear-gradient(
     to bottom,
-    rgb(0 0 0 / 0%) 0px,
-    rgb(0 0 0 / 0%) 19px,
-    rgb(0 0 0 / 50%) 20px
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 19px,
+    rgba(0, 0, 0, 0.5) 20px
   );
 }
 
 p {
   padding: 10px;
-  background-color: rgb(255 0 0 / 50%);
+  background-color: rgba(255, 0, 0, 0.5);
   margin: 0;
   width: 340px;
   position: relative;

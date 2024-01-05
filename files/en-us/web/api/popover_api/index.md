@@ -94,11 +94,3 @@ See our [Popover API examples landing page](https://mdn.github.io/dom-examples/p
 ## Browser compatibility
 
 {{Compat}}
-
-## See also
-
-- [`popover`](/en-US/docs/Web/HTML/Global_attributes/popover) HTML global attribute
-- [`popovertarget`](/en-US/docs/Web/HTML/Element/button#popovertarget) HTML attribute
-- [`popovertargetaction`](/en-US/docs/Web/HTML/Element/button#popovertargetaction) HTML attribute
-- [`::backdrop`](/en-US/docs/Web/CSS/::backdrop) CSS pseudo-element
-- [`:popover-open`](/en-US/docs/Web/CSS/:popover-open) CSS pseudo-class

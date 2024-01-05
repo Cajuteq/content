@@ -13,9 +13,10 @@ Web performance is all about making websites fast, including making slow process
     <tr>
       <th scope="row">Prerequisites:</th>
       <td>
+        Basic computer literacy,
         <a
           href="/en-US/docs/Learn/Getting_started_with_the_web/Installing_basic_software"
-          >Basic software installed</a
+          >basic software installed</a
         >, and basic knowledge of
         <a href="/en-US/docs/Learn/Getting_started_with_the_web"
           >client-side web technologies</a

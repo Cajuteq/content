@@ -70,7 +70,7 @@ const sampler = gl.createSampler();
 gl.samplerParameteri(sampler, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
 ```
 
-## Browser compatibility
+## Specifications
 
 {{Compat}}
 

@@ -13,7 +13,7 @@ interface returns an {{jsxref("Iteration_protocols",'iterator')}} allowing itera
 through all keys contained in this object. The keys are string
 objects.
 
-{{AvailableInWorkers}}
+> **Note:** This method is available in [Web Workers](/en-US/docs/Web/API/Web_Workers_API).
 
 ## Syntax
 

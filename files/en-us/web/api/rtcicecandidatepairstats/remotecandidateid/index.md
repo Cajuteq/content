@@ -3,7 +3,7 @@ title: "RTCIceCandidatePairStats: remoteCandidateId property"
 short-title: remoteCandidateId
 slug: Web/API/RTCIceCandidatePairStats/remoteCandidateId
 page-type: web-api-instance-property
-browser-compat: api.RTCStatsReport.type_candidate-pair.remoteCandidateId
+browser-compat: api.RTCIceCandidatePairStats.remoteCandidateId
 ---
 
 {{APIRef("WebRTC")}}

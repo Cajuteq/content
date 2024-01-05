@@ -8,7 +8,10 @@ browser-compat: api.GeolocationCoordinates.altitudeAccuracy
 
 {{securecontext_header}}{{APIRef("Geolocation API")}}
 
-The **`altitudeAccuracy`** read-only property of the {{domxref("GeolocationCoordinates")}} interface is a strictly positive `double` representing the accuracy, with a 95% confidence level, of the `altitude` expressed in meters. This value is `null` if the implementation doesn't support measuring altitude.
+The **`GeolocationCoordinates.altitudeAccuracy`** read-only
+property is a strictly positive `double` representing the accuracy, with a
+95% confidence level, of the `altitude` expressed in meters. This value is
+`null` if the implementation doesn't support measuring altitude.
 
 ## Value
 

@@ -19,7 +19,7 @@ accessible because of user's permissions.
 ## Syntax
 
 ```js-nolint
-features()
+const supportedFeatures = FeaturePolicy.features()
 ```
 
 ### Parameters

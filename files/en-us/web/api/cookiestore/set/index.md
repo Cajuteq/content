@@ -23,33 +23,33 @@ set(options)
 
 This method requires one of the following:
 
-- `name` {{optional_inline}}
+- `name`
   - : A string with the name of the cookie.
-- `value` {{optional_inline}}
+- `value`
   - : A string with the value of the cookie.
 
 Or
 
-- `options` {{optional_inline}}
+- `options`
 
   - : An object containing:
 
     - `domain` {{Optional_Inline}}
-      - : A string containing the domain of the cookie. Defaults to `null`.
+      - : A string containing the domain of the cookie.
     - `expires` {{Optional_Inline}}
-      - : A timestamp, given as {{glossary("Unix time")}} in milliseconds, containing the expiration date of the cookie. Defaults to `null`.
+      - : A timestamp, given as [Unix time](/en-US/docs/Glossary/Unix_time) in milliseconds, containing the expiration date of the cookie.
     - `name`
       - : A string with the name of a cookie.
     - `partitioned` {{Optional_Inline}}
       - : A boolean value that defaults to `false`. If set to `true`, the set cookie will be a partitioned cookie. See [Cookies Having Independent Partitioned State (CHIPS)](/en-US/docs/Web/Privacy/Partitioned_cookies) for more information.
     - `path` {{Optional_Inline}}
-      - : A string containing the path of the cookie. Defaults to `/`.
+      - : A string containing the path of the cookie.
     - `sameSite` {{Optional_Inline}}
 
       - : One of the following [`SameSite`](/en-US/docs/Web/HTTP/Headers/Set-Cookie#samesitesamesite-value) values:
 
         - `"strict"`
-          - : Cookies will only be sent in a first-party context and not be sent along with requests initiated by third party websites. This is the default.
+          - : Cookies will only be sent in a first-party context and not be sent along with requests initiated by third party websites.
         - `"lax"`
           - : Cookies are not sent on normal cross-site subrequests (for example to load images or frames into a third party site), but are sent when a user is navigating to the origin site (i.e. when following a link).
         - `"none"`
@@ -75,7 +75,6 @@ The following example sets a cookie by passing an object with `name`, `value`, `
 
 ```js
 const day = 24 * 60 * 60 * 1000;
-
 cookieStore.set({
   name: "cookie1",
   value: "cookie1-value",

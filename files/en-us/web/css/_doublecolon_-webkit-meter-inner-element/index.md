@@ -30,44 +30,21 @@ This will only work in WebKit and Blink-based browsers, such as Safari, Chrome, 
 ### HTML
 
 ```html
-Normal: <meter min="0" max="10" value="6">Score 6/10</meter>
-<br />
-Styled: <meter id="styled" min="0" max="10" value="6">Score 6/10</meter>
+<meter min="0" max="10" value="6">Score out of 10</meter>
 ```
 
 ### CSS
 
 ```css
-body {
-  font-family: monospace;
-}
-
-.safari meter {
-  /* Reset the default appearance for Safari only */
-  /* .safari class is added via JavaScript */
+meter {
+  /* Reset the default appearance for -webkit- only */
   -webkit-appearance: none;
 }
 
-#styled::-webkit-meter-inner-element {
+meter::-webkit-meter-inner-element {
   -webkit-appearance: inherit;
   box-sizing: inherit;
-  border: 1px dashed #aaa;
-}
-```
-
-### JavaScript
-
-```js
-// Safari requires <meter> elements to have an `appearance` of `none` for custom styling
-// using `::-webkit-meter-*` selectors, but `appearance: none` breaks rendering on Chrome.
-// Therefore, we must check if the browser is Safari-based.
-
-const is_safari =
-  navigator.userAgent.includes("AppleWebKit/") &&
-  !navigator.userAgent.includes("Chrome/");
-
-if (is_safari) {
-  document.body.classList.add("safari");
+  border: 1px solid #aaa;
 }
 ```
 

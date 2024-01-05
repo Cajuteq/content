@@ -13,7 +13,7 @@ A great deal of web content can be made accessible just by making sure the corre
     <tr>
       <th scope="row">Prerequisites:</th>
       <td>
-        A basic understanding of HTML (see
+        Basic computer literacy, a basic understanding of HTML (see
         <a href="/en-US/docs/Learn/HTML/Introduction_to_HTML"
           >Introduction to HTML</a
         >), and an understanding of

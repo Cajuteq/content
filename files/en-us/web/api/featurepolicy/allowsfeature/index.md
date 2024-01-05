@@ -19,16 +19,24 @@ specified context (or the default context if no context is specified).
 ## Syntax
 
 ```js-nolint
-allowsFeature(feature)
-allowsFeature(feature, origin)
+const allowed = FeaturePolicy.allowsFeature(feature)
+```
+
+or
+
+```js
+const allowed = FeaturePolicy.allowsFeature(feature, origin);
 ```
 
 ### Parameters
 
-- `feature`
-  - : The specific feature name to check its availability.
-- `origin` {{Optional_inline}}
-  - : The specific origin name to check its availability. If not specificed, the default origin will be used.
+#### `Feature name`
+
+A specific feature name must be specified.
+
+#### `Origin name` {{Optional_inline}}
+
+An origin URL to check the feature on. If it is omitted the default origin is used.
 
 ### Return value
 

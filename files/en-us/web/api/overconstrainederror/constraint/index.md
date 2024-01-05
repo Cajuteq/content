@@ -6,7 +6,7 @@ page-type: web-api-instance-property
 browser-compat: api.OverconstrainedError.constraint
 ---
 
-{{APIRef("Media Capture and Streams")}}
+{{securecontext_header}}{{APIRef("Media Capture and Streams")}}
 
 The **`constraint`** read-only property of the
 {{domxref("OverconstrainedError")}} interface returns the constraint that was supplied

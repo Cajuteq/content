@@ -45,7 +45,7 @@ And 'boum' has ${attrMap["boum"] ? "been" : "not been"} found.`;
 
 {{EmbedLiveSample("Example", "100%", 80)}}
 
-## Specifications
+## Specification
 
 {{Specifications}}
 

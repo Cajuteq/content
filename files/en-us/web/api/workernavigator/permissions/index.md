@@ -32,7 +32,7 @@ navigator.permissions.query({ name: "notifications" }).then((result) => {
 
 {{Specifications}}
 
-## Browser compatibility
+## Browser Support
 
 {{Compat}}
 

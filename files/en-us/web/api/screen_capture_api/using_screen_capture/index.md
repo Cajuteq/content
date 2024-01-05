@@ -13,23 +13,7 @@ In this article, we will examine how to use the Screen Capture API and its {{dom
 
 ## Capturing screen contents
 
-Capturing screen contents as a live {{domxref("MediaStream")}} is initiated by calling {{domxref("MediaDevices.getDisplayMedia", "navigator.mediaDevices.getDisplayMedia()")}}, which returns a promise that resolves to a stream containing the live screen contents. The `displayMediaOptions` object referenced in the below examples might look something like this:
-
-```js
-const displayMediaOptions = {
-  video: {
-    displaySurface: "browser",
-  },
-  audio: {
-    suppressLocalAudioPlayback: false,
-  },
-  preferCurrentTab: false,
-  selfBrowserSurface: "exclude",
-  systemAudio: "include",
-  surfaceSwitching: "include",
-  monitorTypeSurfaces: "include",
-};
-```
+Capturing screen contents as a live {{domxref("MediaStream")}} is initiated by calling {{domxref("MediaDevices.getDisplayMedia", "navigator.mediaDevices.getDisplayMedia()")}}, which returns a promise that resolves to a stream containing the live screen contents.
 
 ### Starting screen capture: `async`/`await` style
 
@@ -105,7 +89,7 @@ Before starting a project that will require sharing of audio, be sure to check t
 To request that the screen be shared with included audio, the options passed into `getDisplayMedia()` might look like this:
 
 ```js
-const displayMediaOptions = {
+const gdmOptions = {
   video: true,
   audio: true,
 };
@@ -114,7 +98,7 @@ const displayMediaOptions = {
 This allows the user total freedom to select whatever they want, within the limits of what the user agent supports. This could be refined further by specifying additional options, and constraints inside the `audio` and `video` objects:
 
 ```js
-const displayMediaOptions = {
+const gdmOptions = {
   video: {
     displaySurface: "window",
   },

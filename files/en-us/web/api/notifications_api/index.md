@@ -2,11 +2,7 @@
 title: Notifications API
 slug: Web/API/Notifications_API
 page-type: web-api-overview
-browser-compat:
-  - api.Notification
-  - api.ServiceWorkerRegistration.showNotification
-  - api.ServiceWorkerRegistration.getNotifications
-spec-urls: https://notifications.spec.whatwg.org/
+browser-compat: api.Notification
 ---
 
 {{DefaultAPISidebar("Web Notifications")}}{{AvailableInWorkers}}{{securecontext_header}}
@@ -40,23 +36,19 @@ In addition, the Notifications API spec specifies a number of additions to the [
 
 > **Note:** To find out more about using notifications in your own app, read [Using the Notifications API](/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API).
 
-## Interfaces
+## Notifications interfaces
 
 - {{domxref("Notification")}}
   - : Defines a notification object.
+
+### Service worker additions
+
+- {{domxref("ServiceWorkerRegistration")}}
+  - : Includes the {{domxref("ServiceWorkerRegistration.showNotification()")}} and {{domxref("ServiceWorkerRegistration.getNotifications()")}} method, for controlling the display of notifications.
+- {{domxref("ServiceWorkerGlobalScope")}}
+  - : Includes the {{domxref("ServiceWorkerGlobalScope.notificationclick_event", "onnotificationclick")}} handler, for firing custom functions when a notification is clicked.
 - {{domxref("NotificationEvent")}}
-  - : Represents a notification event dispatched on the {{domxref("ServiceWorkerGlobalScope")}} of a {{domxref("ServiceWorker")}}.
-
-### Extensions to other interfaces
-
-- {{domxref("ServiceWorkerGlobalScope/notificationclick_event", "notificationclick")}} event
-  - : Occurs when a user clicks on a displayed notification.
-- {{domxref("ServiceWorkerGlobalScope/notificationclose_event", "notificationclose")}} event
-  - : Occurs when a user closes a displayed notification.
-- {{domxref("ServiceWorkerRegistration.getNotifications()")}}
-  - : Returns a {{jsxref("Promise")}} that resolves to an array of {{domxref("Notification")}} objects.
-- {{domxref("ServiceWorkerRegistration.showNotification()")}}
-  - : Displays the notification with the requested title.
+  - : A specific type of event object, based on {{domxref("ExtendableEvent")}}, which represents a notification that has fired.
 
 ## Specifications
 

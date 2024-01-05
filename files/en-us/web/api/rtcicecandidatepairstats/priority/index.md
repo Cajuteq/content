@@ -5,7 +5,7 @@ slug: Web/API/RTCIceCandidatePairStats/priority
 page-type: web-api-instance-property
 status:
   - deprecated
-browser-compat: api.RTCStatsReport.type_candidate-pair.priority
+browser-compat: api.RTCIceCandidatePairStats.priority
 ---
 
 {{APIRef("WebRTC")}}{{deprecated_header}}

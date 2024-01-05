@@ -6,13 +6,19 @@ page-type: web-api-instance-property
 browser-compat: api.WakeLockSentinel.released
 ---
 
-{{APIRef("Screen Wake Lock API")}}{{SecureContext_Header}}
+{{APIRef("Screen Wake Lock API")}}
 
-The **`released`** read-only property of the
+The read-only **`released`** property of the
 {{domxref("WakeLockSentinel")}} interface returns a boolean that indicates whether
 a {{domxref("WakeLockSentinel")}} has been released yet.
 
-## Value
+## Syntax
+
+```js-nolint
+const released = sentinel.released
+```
+
+### Value
 
 A boolean value, that is `false` until the
 {{domxref("WakeLockSentinel")}} has been released (either through a call to
@@ -43,7 +49,3 @@ await sentinel.release();
 ## Browser compatibility
 
 {{Compat}}
-
-## See also
-
-- [Stay awake with the Screen Wake Lock API](https://developer.chrome.com/docs/capabilities/web-apis/wake-lock/)

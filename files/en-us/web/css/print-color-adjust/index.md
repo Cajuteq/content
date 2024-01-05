@@ -70,7 +70,10 @@ For whatever reason, this is the desired appearance in any rendering environment
 ```css
 .my-box {
   background-color: black;
-  background-image: linear-gradient(rgb(0 0 180 / 50%), rgb(70 140 220 / 50%));
+  background-image: linear-gradient(
+    rgba(0, 0, 180, 0.5),
+    rgba(70, 140, 220, 0.5)
+  );
   color: #900;
   width: 15rem;
   height: 6rem;

@@ -28,8 +28,6 @@ The **`MediaRecorder`** interface of the [MediaStream Recording API](/en-US/docs
   - : Returns the video encoding bit rate in use. This may differ from the bit rate specified in the constructor (if it was provided).
 - {{domxref("MediaRecorder.audioBitsPerSecond")}} {{ReadOnlyInline}}
   - : Returns the audio encoding bit rate in use. This may differ from the bit rate specified in the constructor (if it was provided).
-- {{domxref("MediaRecorder.audioBitrateMode")}} {{ReadOnlyInline}} {{Experimental_Inline}}
-  - : Returns the bitrate mode used to encode audio tracks.
 
 ## Static methods
 
@@ -53,18 +51,20 @@ The **`MediaRecorder`** interface of the [MediaStream Recording API](/en-US/docs
 
 Listen to these events using `addEventListener()` or by assigning an event listener to the `oneventname` property of this interface.
 
-- {{domxref("MediaRecorder/dataavailable_event", "dataavailable")}}
+- [`dataavailable`](/en-US/docs/Web/API/MediaRecorder/dataavailable_event)
   - : Fires periodically each time `timeslice` milliseconds of media have been recorded (or when the entire media has been recorded, if `timeslice` wasn't specified). The event, of type {{domxref("BlobEvent")}}, contains the recorded media in its {{domxref("BlobEvent.data", "data")}} property.
-- {{domxref("MediaRecorder/error_event", "error")}}
+- [`error`](/en-US/docs/Web/API/MediaRecorder/error_event)
   - : Fired when there are fatal errors that stop recording. The received event is based on the {{domxref("MediaRecorderErrorEvent")}} interface, whose {{domxref("MediaRecorderErrorEvent.error", "error")}} property contains a {{domxref("DOMException")}} that describes the actual error that occurred.
-- {{domxref("MediaRecorder/pause_event", "pause")}}
+- [`pause`](/en-US/docs/Web/API/MediaRecorder/pause_event)
   - : Fired when media recording is paused.
-- {{domxref("MediaRecorder/resume_event", "resume")}}
+- [`resume`](/en-US/docs/Web/API/MediaRecorder/resume_event)
   - : Fired when media recording resumes after being paused.
-- {{domxref("MediaRecorder/start_event", "start")}}
+- [`start`](/en-US/docs/Web/API/MediaRecorder/start_event)
   - : Fired when media recording starts.
-- {{domxref("MediaRecorder/stop_event", "stop")}}
+- [`stop`](/en-US/docs/Web/API/MediaRecorder/stop_event)
   - : Fired when media recording ends, either when the {{domxref("MediaStream")}} ends, or after the {{domxref("MediaRecorder.stop()")}} method is called.
+- [`warning`](/en-US/docs/Web/API/MediaRecorder/warning_event) {{deprecated_inline}}
+  - : Fired when media recording has a non-fatal error.
 
 ## Example
 
@@ -156,5 +156,5 @@ if (navigator.mediaDevices) {
 - [Web Dictaphone](https://mdn.github.io/dom-examples/media/web-dictaphone/): MediaRecorder + getUserMedia + Web Audio API visualization demo, by [Chris Mills](https://twitter.com/chrisdavidmills) ([source on GitHub](https://github.com/mdn/dom-examples/tree/main/media/web-dictaphone).)
 - [Recording a media element](/en-US/docs/Web/API/MediaStream_Recording_API/Recording_a_media_element)
 - [simpl.info MediaStream Recording demo](https://simpl.info/mediarecorder/), by [Sam Dutton](https://twitter.com/sw12).
-- {{domxref("MediaDevices.getUserMedia()")}}
+- {{domxref("MediaDevices.getUserMedia")}}
 - [OpenLang](https://github.com/chrisjohndigital/OpenLang): HTML video language lab web application using MediaDevices and the MediaStream Recording API for video recording ([source on GitHub](https://github.com/chrisjohndigital/OpenLang))

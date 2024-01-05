@@ -8,7 +8,7 @@ status:
 browser-compat: api.CustomStateSet.keys
 ---
 
-{{APIRef("Web Components")}}{{SeeCompatTable}}
+{{APIRef("DOM")}}{{SeeCompatTable}}
 
 The **`keys()`** method of the {{domxref("CustomStateSet")}} interface is an alias for {{domxref("CustomStateSet.values")}}.
 

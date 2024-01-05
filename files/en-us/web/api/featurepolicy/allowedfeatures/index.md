@@ -20,7 +20,7 @@ returns a subset of directives returned by {{DOMxRef("FeaturePolicy.features",
 ## Syntax
 
 ```js-nolint
-allowedFeatures()
+const allowed = FeaturePolicy.allowedFeatures()
 ```
 
 ### Parameters
